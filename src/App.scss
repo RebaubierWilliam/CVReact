@@ -1,19 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+
 // color
-$color1: #22223b;
-$color2: #4a4e69;
-$color3: #9a8c98;
-$color4: #c9ada7;
-$color5: #f2e9e4;
+$color1: #F9F7F0;
+$color2: #18B7BE;
+$color3: #178CA4;
+$color4: #072A40;
+$color5: #393939;
 
 *{
-  color: $color1;
+  color: $color5;
   background-color: #f2e9e4;
+  font-family: 'Poppins';
+  font-size: 1em;
 }
 .sideBar__container{
-    background-color: $color3;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 .main__conteneur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 30% 70% ;
 }
+.portrait__conteneur {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 8%;
+  border-radius: 0% 50% 50% 0%;
+  width: 300px;
+  height: 150px;
+  background: $color2;
+  
+}
+.header__conteneur {
+  color: white;
+  grid-row: 1;
+  grid-column: 1/span 2;
+  background: linear-gradient(180deg, $color3 0%, $color4 100%);
+  .header__conteneur__citation{
+    margin-left: 20%;
+    font-family: 'Dancing Script';
+    background: transparent;
+    color: inherit;
+    font-size: 3.2em;
+  }
+  .header__conteneur__auteur{
+    margin-left: 30%;
+    font-family: 'Dancing Script';
+    background: transparent;
+    color: inherit;
+    font-size: 1.6em;
+  }
+}
+.center__conteneur{
+  grid-row: 2;
+  grid-column: 2;
+}
+

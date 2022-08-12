@@ -1,12 +1,15 @@
 import './App.scss';
 import Sidebar from './component/Sidebar';
+import Header from './component/Header';
+import Portrait from './component/Portrait';
 
 function App() {
   return (
     <div className='main__conteneur'>
-      {/* sidebar  */}
+      <Portrait/>
+      <Header/>
       <Sidebar />
-      <div className='main'>Main</div>
+      <div className='center__conteneur'>Main</div>
 
     </div>
   );
