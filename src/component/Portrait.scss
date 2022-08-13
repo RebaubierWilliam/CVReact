@@ -1,6 +1,39 @@
+@import '../App.scss';
+
+.portrait__conteneur {
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 8%;
+    border-radius: 0% 50% 50% 0%;
+    width: 300px;
+    height: 150px;
+    background: $color2;
+
+}
 .portrait__conteneur__photo {
     width: 150px;
     border-radius: 50%;
-    align-self: center;
+    
     background: transparent;
+    display: inline-block;
+}
+
+.portrait__conteneur__name{
+    font-family: 'Dancing Script';
+    display: inline-block;
+    vertical-align : top;
+    background: transparent;
+    div{
+        background: transparent;
+        color: $color4;
+        font-weight: 1000;
+        font-size: x-large;
+    }
+    div:first-child{
+        margin-top: 1em;
+    }
+    div:last-child{
+        font-style: italic;
+        font-size: medium;
+    }
 }

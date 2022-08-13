@@ -6,7 +6,15 @@ export default class Portrait extends Component {
     return (
       <div className='portrait__conteneur'>
           <img className='portrait__conteneur__photo' src='../images/ma photo.png' alt='' />
-          <h2>William Rebaubier</h2>
+          <div className='portrait__conteneur__name'>
+              <div>
+                WILLIAM
+              </div>
+              <div>
+                REBAUBIER
+              </div>
+              <div>dev sénior</div>
+          </div>
       </div>
     )
   }
