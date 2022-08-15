@@ -1,0 +1,20 @@
+@import '../App.scss';
+
+.bloc-onglets{
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+.onglets{
+    padding: 10px;
+    border: 0px;
+    font-weight: bold;
+}
+.onglets:hover{
+    font-size: larger;
+
+}
+.active-onglets{
+    font-size: larger;
+    border-bottom: 3px solid $color2;
+}

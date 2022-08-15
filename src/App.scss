@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
-
+@import 'normalize.css';
 // color
 $color1: #F9F7F0;
 $color2: #18B7BE;
@@ -9,7 +9,7 @@ $color5: #393939;
 
 *{
   color: $color5;
-  background-color: #f2e9e4;
+  background-color: $color1;
   font-family: 'Poppins';
   font-size: 1em;
 }
@@ -21,7 +21,7 @@ $color5: #393939;
   height: 150px;
   background: $color2;
 }
-.sideBar__container{
+.sideBar__conteneur{
     grid-row: 2;
     grid-column: 1;
     width: 100%;
@@ -45,5 +45,6 @@ $color5: #393939;
 .center__conteneur{
   grid-row: 2;
   grid-column: 2;
+  display: flex;
 }
 

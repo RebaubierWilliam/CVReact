@@ -2,6 +2,7 @@ import './App.scss';
 import Sidebar from './component/Sidebar';
 import Header from './component/Header';
 import Portrait from './component/Portrait';
+import Center from './component/Center';
 
 function App() {
   return (
@@ -9,8 +10,7 @@ function App() {
       <Portrait/>
       <Header/>
       <Sidebar />
-      <div className='center__conteneur'>Main</div>
-
+      <Center />
     </div>
   );
 }
